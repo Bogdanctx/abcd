@@ -12,6 +12,11 @@ on:
       older_than_date:
         description: "Artifacts older than (YYYY-MM-DD)"
         required: false
+
+permissions:
+  actions: write
+  contents: read
+
 jobs:
   clear-cache:
     runs-on: ubuntu-latest
